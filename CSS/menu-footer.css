@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Ailerons';
+    src: url('../Fonts/Ailerons-Regular.woff2') format('woff2'),
+        url('../Fonts/Ailerons-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#header{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    z-index: 1100;
+}
+
+/*-------------NAV-BAR--------------*/
+.navbar{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    /*background: url(https://images4.alphacoders.com/102/1021184.png);
+    background-position: 0 310px;*/
+    background: rgba(255, 252, 1, 0.8);
+}
+#navbar-brand-cont{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+nav img{
+    width: 140px;
+}
+#navbar-brand-cont h4{
+    height: fit-content;
+    margin: auto;
+    font-family: 'Ailerons';
+}
+.navbar-brand{
+    padding: 0 !important;
+}
+.nav-link{
+    font-family: 'Ailerons';
+    font-size: 20px;
+}
+/*-------------/NAV-BAR--------------*/
+
+/*-------------MENU-BUTTON--------------*/
+.icon-menu{
+    width: 22px;
+    height: 17px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.icon-menu span{
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #35495e;
+    border-radius: 2px;
+}
+.icon-menu span:nth-child(1){
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+.icon-menu span:nth-child(2){
+    transition: all .5s;
+}
+.icon-menu span:nth-child(3){
+    transform: rotate(0deg);
+    transition: all .5s;
+}
+.icon-menu.collap span:nth-child(1){
+    width: 100%;
+    -webkit-transform: rotate(45deg) translate(4px,5px);
+    transform: rotate(45deg) translate(4px,5px);
+    transition: all .5s;
+}
+.icon-menu.collap span:nth-child(2){
+    opacity: 0;
+    transition: all .5s;
+}
+.icon-menu.collap span:nth-child(3){
+    width: 100%;
+    -webkit-transform: rotate(-45deg) translate(5px,-6px);
+    transform: rotate(-45deg) translate(5px,-6px);
+    transition: all .5s;
+}
+/*-------------/MENU-BUTTON--------------*/
+
+/*-------------FOOTER--------------*/
+footer{
+    background: url(https://images4.alphacoders.com/102/1021184.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer .row>div{
+    height: auto;
+    border: none;
+}
+footer a{
+    font-family: 'Ailerons';
+    color: #000000;
+    text-decoration: none;
+}
+footer a:hover{
+    font-family: 'Ailerons';
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*-------------/FOOTER--------------*/
+
+/*-------------RESPONSIVE--------------*/
+@media screen and (max-width: 424px){
+    #navbar-brand-cont h4{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px){
+    #header{
+        position: relative;
+        top: 0;
+    }
+    .navbar{
+        background: url(https://images4.alphacoders.com/102/1021184.png);
+        background-position: 0 310px;
+    }
+}
+/*-------------/RESPONSIVE--------------*/
