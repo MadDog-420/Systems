@@ -1,6 +1,9 @@
 section{
     padding-top: 6rem;
 }
+.nav-link{
+    text-transform: uppercase;
+}
 /*-------------CAROUSEL--------------*/
 #carousel {
     position: relative;
@@ -15,8 +18,8 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-filter: contrast(150%);
-    filter: contrast(150%);
+    -webkit-filter: contrast(135%);
+    filter: contrast(135%);
 }
 .carousel-item>div>div{
     width: 60%;
@@ -26,7 +29,7 @@ section{
     display: -ms-flexbox;
     display: flex;
     padding-top: 77px;
-
+    /*
     background: rgba(0,24,110,1);
     background: -moz-linear-gradient(left, rgba(0,24,110,1) 0%, rgba(0,24,110,1) 10%, rgba(0,24,110,0.64) 50%, rgba(0,18,84,0.53) 62%, rgba(0,0,0,0) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,24,110,1)), color-stop(10%, rgba(0,24,110,1)), color-stop(50%, rgba(0,24,110,0.64)), color-stop(62%, rgba(0,18,84,0.53)), color-stop(100%, rgba(0,0,0,0)));
@@ -35,6 +38,16 @@ section{
     background: -ms-linear-gradient(left, rgba(0,24,110,1) 0%, rgba(0,24,110,1) 10%, rgba(0,24,110,0.64) 50%, rgba(0,18,84,0.53) 62%, rgba(0,0,0,0) 100%);
     background: linear-gradient(to right, rgba(0,24,110,1) 0%, rgba(0,24,110,1) 10%, rgba(0,24,110,0.64) 50%, rgba(0,18,84,0.53) 62%, rgba(0,0,0,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00186e', endColorstr='#000000', GradientType=1 );
+    */
+    background: rgba(4,21,54,1);
+    background: -moz-linear-gradient(left, rgba(4,21,54,1) 0%, rgba(5,24,61,1) 10%, rgba(8,35,90,0.75) 50%, rgba(8,39,99,0.6) 63%, rgba(11,49,125,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(4,21,54,1)), color-stop(10%, rgba(5,24,61,1)), color-stop(50%, rgba(8,35,90,0.75)), color-stop(63%, rgba(8,39,99,0.6)), color-stop(100%, rgba(11,49,125,0)));
+    background: -webkit-linear-gradient(left, rgba(4,21,54,1) 0%, rgba(5,24,61,1) 10%, rgba(8,35,90,0.75) 50%, rgba(8,39,99,0.6) 63%, rgba(11,49,125,0) 100%);
+    background: -o-linear-gradient(left, rgba(4,21,54,1) 0%, rgba(5,24,61,1) 10%, rgba(8,35,90,0.75) 50%, rgba(8,39,99,0.6) 63%, rgba(11,49,125,0) 100%);
+    background: -ms-linear-gradient(left, rgba(4,21,54,1) 0%, rgba(5,24,61,1) 10%, rgba(8,35,90,0.75) 50%, rgba(8,39,99,0.6) 63%, rgba(11,49,125,0) 100%);
+    background: linear-gradient(to right, rgba(4,21,54,1) 0%, rgba(5,24,61,1) 10%, rgba(8,35,90,0.75) 50%, rgba(8,39,99,0.6) 63%, rgba(11,49,125,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#041536', endColorstr='#0b317d', GradientType=1 );
+
 }
 .caption{
     display: -webkit-flex;
