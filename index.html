@@ -8,10 +8,11 @@
     <link rel="shortcut icon" href="IMG/favi_utp_sistemas.png" type="image/png">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <!-- Styles CSS-->
     <link rel="stylesheet" href="CSS/menu-footer.css">
     <link rel="stylesheet" href="CSS/main1.css">
+    <link rel="stylesheet" href="CSS/cyberpunk.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -19,11 +20,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <!-- Optional JavaScript -->
     <script src="JS/menu.js"></script>
+    <script src="JS/main1.js"></script>
     
+    <script src="https://kit.fontawesome.com/a7b3ea38a5.js" crossorigin="anonymous"></script>
     <title>SistemasUTP</title>
   </head>
   <body>
-    <header id="header">
+    <div class="ghost"></div>
+    <header class="sticky-top" id="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div id="navbar-brand-cont"><a class="navbar-brand" href="index.html">
                 <img src="https://s3.amazonaws.com/evaluar-test-media-bucket/COMPANY/image/6e/COMPANY_8aa3af0c-5648-4467-b3e7-de4fc957366e_87d8ed27-ad8b-492c-be89-4d4aee9801e8.png" style="filter: sepia(100%) hue-rotate(190deg) saturate(500%);">
@@ -43,7 +47,7 @@
                             <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Docentes</a>
+                            <a class="nav-link" href="docentes.html">Docentes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Cursos</a>
@@ -95,7 +99,7 @@
                             <div class="col-xs-12 col-md-12 offset-md-12 text-center text-md-left align-items-start">
                                 <h1>Nuestros docentes están más que capacitados</h1>
                                 <p class="d-none d-md-block">Exigentes pero justos. Y no tienen problemas con los proyectores!</p>
-                                <a href="#" class="btn btn-outline-light">Échales un vistazo</a>
+                                <a href="docentes.html" class="btn btn-outline-light">Échales un vistazo</a>
                             </div>
                         </div>
                     </div>
@@ -104,71 +108,65 @@
         </div>
 
         <!-- Places -->
-        <section class="mt-5 pr-5 pl-5" id="places">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-xs-12 col-md-6 pl-0 pr-0 text-center">
-                        <img src="https://www.utp.edu.pe/sites/default/files/styles/newlabs/public/dsc02043.jpg?itok=DTGwz392" alt="Place">
-                    </div>
-                    <div class="col text-left mt-2 pb-4">
-                        <h3>Laboratorio de arquitectura de computadores</h3>
-                        <p class="lead">
-                            Ensambla, repara y realiza mantenimiento de computadoras.
-                        </p>
-                    </div>
-              </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-xs-12 col-md-6 pl-0 pr-0 text-center">
-                        <img src="https://www.utp.edu.pe/sites/default/files/styles/newlabs/public/laboratorio_pc.png?itok=ZrQ0mNS4" alt="Place">
-                    </div>
-                <div class="col text-left mt-2 pb-4">
-                    <h3>Laboratorio de cómputo-PC</h3>
-                    <p class="lead">
-                        Estos laboratorios están preparados para albergar las sesiones académicas regulares. Sirven como centro de entrenamiento para los alumnos que requieren utilizarlos fuera del horario de clases.
-                    </p>
+        <section class="pb-5 pr-5 pl-5" id="places">
+            <div class="container pb-5">
+                <div class="row">
+                  <div class="col text-center text-uppercase">
+                    <h3>Featuring</h3>
                   </div>
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-xs-12 col-md-6 pl-0 pr-0 text-center">
-                        <img src="https://www.utp.edu.pe/sites/default/files/styles/newlabs/public/laboratorio_de_desarrollo_de_software.jpg?itok=RCRW2knO" alt="Place">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg mb-3 border-b">
+                        <div class="row align-items-center justify-content-center">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="row text-center align-items-center justify-content-center p-3">
+                            <p class="w-100 lead">Arquitectura de computadores</p>
+                            <p class="w-100">Ensambla, repara y realiza.</p>
+                        </div>
                     </div>
-                <div class="col text-left mt-2 pb-4">
-                    <h3>Laboratorio de desarrollo de software</h3>
-                    <p class="lead">
-                        Diseña, desarrolla, verifica y valida diferentes softwares aplicados a los campos de la Ingeniería. Crea aplicaciones móviles a través de sistemas especializados.
-                    </p>
-                  </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-xs-12 col-md-6 pl-0 pr-0 text-center">
-                        <img src="https://www.utp.edu.pe/sites/default/files/styles/newlabs/public/laboratorio_de_desarrollo_de_software.jpg?itok=RCRW2knO" alt="Place">
+                    <div class="col-sm-12 col-md-6 col-lg mb-3 border-b">
+                        <div class="row align-items-center justify-content-center">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="row text-center align-items-center justify-content-center p-3">
+                            <p class="w-100 lead">Laboratorio de cómputo-PC</p>
+                            <p class="w-100">Sesiones académicas regulares y fuera del horario.</p>
+                      </div>
                     </div>
-                <div class="col text-left mt-2 pb-4">
-                    <h3>Laboratorio de desarrollo de software</h3>
-                    <p class="lead">
-                        Diseña, desarrolla, verifica y valida diferentes softwares aplicados a los campos de la Ingeniería. Crea aplicaciones móviles a través de sistemas especializados.
-                    </p>
-                  </div>
+                    <div class="col-sm-12 col-md-6 col-lg mb-3 border-b">
+                        <div class="row align-items-center justify-content-center">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="row text-center align-items-center justify-content-center p-3">
+                            <p class="w-100 lead">Desarrollo de software</p>
+                            <p class="w-100">Diseña, desarrolla, verifica y valida.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg mb-3 border-b">
+                        <div class="row align-items-center justify-content-center">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="row text-center align-items-center justify-content-center p-3">
+                            <p class="w-100 lead">Seguridad y auditoría informática</p>
+                            <p class="w-100">Recupera datos y realiza auditorías informáticas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- Places -->
     </main>
+
     <footer id="footer" class="pb-5 pt-4">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-12 col-lg"><a href="#">FAQ</a></div>
-                <div class="col-12 col-lg"><a href="#">Contáctanos</a></div>
-                <div class="col-12 col-lg"><a href="#">Prensa</a></div>
-                <div class="col-12 col-lg"><a href="#">Conferencias</a></div>
-                <div class="col-12 col-lg"><a href="#">Términos y condiciones</a></div>
-                <div class="col-12 col-lg"><a href="#">Privacidad</a></div>
-                <div class="col-12 col-lg"><a href="#">Estudiantes</a></div>
+            <div class="row text-center navbar-light">
+                <div class="col-12 col-lg"><a class="nav-link" href="#">Contáctanos</a></div>
+                <div class="col-12 col-lg"><a class="nav-link disabled" href="#">Términos y condiciones</a></div>
+                <div class="col-12 col-lg"><a class="nav-link disabled" href="#">Privacidad</a></div>
             </div>
         </div>
     </footer>

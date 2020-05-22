@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap');
+
+.punk-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #050a0e !important;
+    border-radius: 0 !important;
+    outline: none;
+    background-color: #fff;
+    padding: 20px 25px;
+    position: relative;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: .85rem;
+}
+.punk-border::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: -14px;
+    left: -13px;
+    background-color: #fff;
+    border-top: 2px solid #050a0e;
+    transform: rotate(45deg);
+}
+  
+.punk-border::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -14px;
+    right: -13px;
+    background-color: #fff;
+    border-bottom: 2px solid #050a0e;
+    transform: rotate(45deg);
+}
+
+.punk-label {
+    font-size: .40rem;
+    position: absolute;
+    bottom: -5px;
+    right: 8%;
+    padding: 0 5px;
+    background-color: #fcee09;
+    z-index: 3;
+    border-left: 1px solid #00f0ff;
+}
+.punk-glitch {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    filter: drop-shadow(-2px 3px #67e3f3) drop-shadow(-1px -3px #02d8f3) drop-shadow(2px 1px #02d8f3);
+}
+.punk-border:hover .punk-glitch,
+.punk-border:hover .btn__content::after,
+.punk-border:focus .punk-glitch,
+.punk-border:focus .btn__content::after {
+    display: block;
+    animation: glitch-animation 5s linear 0s infinite;
+}
+
+@keyframes glitch-animation {
+    4% {
+        opacity: 1;
+        transform: translateZ(0);
+        clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      }
+    5% {
+      clip-path: polygon(0 60%, 100% 60%, 100% 40%, 0 40%);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    6.1% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    7% {
+      clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    8% {
+      clip-path: polygon(0 85%, 100% 85%, 100% 40%, 0 40%);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    8.1% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+  
+    9% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(-5px);
+    }
+  
+    10% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(5px);
+    }
+  
+    11% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(-5px);
+    }
+  
+    12% {
+      clip-path: polygon(0 63%, 100% 63%, 100% 80%, 0 80%);
+      transform: translate(0);
+    }
+  
+    13% {
+      clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+      transform: translate3d(5px, 0, 0);
+    }
+  
+    14% {
+      clip-path: polygon(0 10%, 100% 10%, 100% 0, 0 0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  
+    14.1% {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+      opacity: 1;
+    }
+
+    to {
+      clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+      opacity: 1;
+    }
+  }
