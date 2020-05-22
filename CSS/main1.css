@@ -44,7 +44,6 @@ section{
 .caption-txt{
     padding: 0 10%;
 }
-
 /*-------------/CAROUSEL--------------*/
 
 /*-------------PLACES--------------*/
@@ -54,6 +53,7 @@ section{
     margin: auto;
 }
 #places i{
+    color: #081118;
     font-size: 45px;
 }
 .border-b{
@@ -69,13 +69,22 @@ section{
     display: flex;
     position: relative;
     margin-top: auto;
-    background: #050a0e;
+    background: #081118;
 }
 /*-------------/PLACES--------------*/
 
 /*-------------DOCENTES--------------*/
 #teachers{
     padding-top: 0;
+}
+video{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    background-size: cover;
+    z-index: -10;
 }
 /*-------------/DOCENTES--------------*/
 
