@@ -43,6 +43,7 @@ nav img{
 .nav-link{
     font-family: 'Barlow','sans-serif';
     font-size: 20px;
+    background-color: transparent !important;
 }
 /*-------------/NAV-BAR--------------*/
 
