@@ -101,6 +101,18 @@ video{
 }
 /*-------------/DOCENTES--------------*/
 
+/*-------------CURSOS--------------*/
+#courses{
+    padding-top: 0;
+}
+#courses .img-cont{
+    padding: 0;
+    margin: 0;
+    touch-action: pan-x pan-y;
+    overflow: hidden;
+}
+/*-------------/CURSOS--------------*/
+
 /*-------------RESPONSIVE--------------*/
 @media screen and (max-width: 590px){
     .carousel-item>div>div{
