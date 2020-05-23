@@ -113,6 +113,72 @@ video{
 }
 /*-------------/CURSOS--------------*/
 
+/*-------------CONTACT--------------*/
+.modal-header{
+    background: #081118;
+    color: #fff;
+}
+.modal-body{
+    background: url(https://images4.alphacoders.com/102/1021184.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.modal-footer{
+    background: #081118;
+}
+.close{
+    color: #fff !important;
+}
+.contact-form{
+    width: 100%;
+}
+.contact-form>div{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form div{
+    width: 100%;
+}
+.contact-form div div{
+    width: 48%;
+}
+.contact-form input{
+    width: 100%;
+}
+.contact-form input[type="text"]{
+    border: 1px solid #dadada;
+    color: #999999;
+    margin: 0 0 14px;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 15px 20px;
+    resize: none;
+}
+.contact-form textarea{
+    width: 100%;
+    border: 1px solid #dadada;
+    color: #999999;
+    margin: 0 0 14px;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 15px 20px;
+    resize: none;
+}
+.contact-bottom{
+    padding: 20px;
+    color: #2a2a2a;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: 1px solid #dadada;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+/*-------------/CONTACT--------------*/
+
 /*-------------RESPONSIVE--------------*/
 @media screen and (max-width: 590px){
     .carousel-item>div>div{
